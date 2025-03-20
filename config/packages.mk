@@ -10,7 +10,6 @@ PRODUCT_PACKAGES += \
     RepainterServicePriv \
     Ripple \
     TouchGestures \
-    Updater \
     WarpShare
 
 # Themes

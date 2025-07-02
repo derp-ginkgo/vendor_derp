@@ -29,4 +29,23 @@
          Blank sends the user to the Chooser first.
          This name is in the ComponentName flattened format (package/class)  -->
     <string name="config_screenshotEditor">com.google.android.markup/com.google.android.markup.AnnotateActivity</string>
+
+    <!-- Icons that don't show in a collapsed non-keyguard statusbar -->
+    <string-array name="config_collapsed_statusbar_icon_blocklist" translatable="false">
+    </string-array>
+
+    <!-- Icons that don't show in a collapsed statusbar on keyguard -->
+    <string-array name="config_keyguard_statusbar_icon_blocklist" translatable="false">
+    </string-array>
+
+    <!-- ComponentName for the file browsing app that the system would expect to be used in work
+         profile. The icon for this app will be shown to the user when informing them that a
+         screenshot has been saved to work profile. If blank, a default icon will be shown. -->
+    <string name="config_sceenshotWorkProfileFilesApp" translatable="false">com.android.documentsui/.files.LauncherActivity</string>
+
+    <!-- vibrate On Icon Animation -->    
+    <bool name="config_vibrateOnIconAnimation" translatable="false">false</bool>
+    
+    <!-- turbulence Noise -->
+    <bool name="config_turbulenceNoise" translatable="false">false</bool>
 </resources>

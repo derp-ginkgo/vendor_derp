@@ -210,14 +210,17 @@ $(call inherit-product, vendor/certification/config.mk)
 include vendor/derp/config/version.mk
 
 # GApps
-WITH_GMS := true
+ifeq ($(WITH_GMS), true)
 $(call inherit-product, vendor/gms/products/gms.mk)
+endif
 
 # Pixel Framework
 $(call inherit-product, vendor/pixel-framework/config.mk)
 
 # Pixel customization
+ifeq ($(WITH_GMS), true)
 TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
 TARGET_INCLUDE_STOCK_ARCORE ?= true
 TARGET_SUPPORTS_QUICK_TAP ?= true
 TARGET_SUPPORTS_CALL_RECORDING ?= true
+endif

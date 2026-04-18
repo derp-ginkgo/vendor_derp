@@ -203,9 +203,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Art
 include vendor/derp/config/art.mk
 
-# Certification
-$(call inherit-product, vendor/certification/config.mk)
-
 # Versioning
 include vendor/derp/config/version.mk
 
